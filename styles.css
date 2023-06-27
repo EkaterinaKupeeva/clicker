@@ -1,0 +1,165 @@
+#nameClicker {
+  text-align: center;
+  font-size: 8vh;
+  padding: 1vh;
+  font-family: "Rubik Mono One", sans-serif;
+  text-shadow: 10px 10px 30px rgb(71, 192, 223),
+    -10px -10px 30px rgb(196, 144, 226);
+  -webkit-text-stroke: 1px #cec3eb;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+  margin: 2vh 0;
+}
+
+@media (max-width: 500px) {
+  #nameClicker {
+    font-size: 10vw;
+  }
+}
+
+/*flex start*/
+.flex-container-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+/*flex end*/
+
+/*Начальная заставка - выбор содержания кнопок start*/
+.inputStarts {
+  margin: 0 1vh;
+  margin-top: 2vh;
+  background-color: rgb(90, 64, 104);
+  border: none;
+  border-radius: 4px;
+  padding: 0.3vh 1.3vh;
+  font-size: 2.9vh;
+}
+
+@media (max-width: 500px) {
+  .inputStarts {
+    margin: 0 2vw;
+    font-size: 5vw;
+    padding: 1vw 3vw;
+  }
+}
+
+.inputStarts:disabled {
+color: #07001a;
+}
+
+.inputStarts:hover {
+  background-color: rgb(187, 118, 227);
+  color: #cec3eb;
+  box-shadow: 10px 10px 30px rgb(32, 88, 102),
+    -10px -10px 30px rgb(90, 66, 104);
+}
+
+.inputStartsAdd {
+  background-color: rgb(187, 118, 227);
+  color: #cec3eb;
+  box-shadow: 10px 10px 30px rgb(71, 192, 223),
+    -10px -10px 30px rgb(196, 144, 226);
+}
+
+.inputStartsAdd:hover {
+  box-shadow: 10px 10px 30px rgb(71, 192, 223),
+    -10px -10px 30px rgb(196, 144, 226);
+}
+/*Начальная заставка - выбор содержания кнопок end*/
+
+
+
+body {
+  background-color: #07001a;
+}
+
+/*кнопки START*/ 
+button:enabled {
+  border-radius: 10px;
+  background-color: #003298;
+  width: 12vh;
+  height: 12vh;
+  margin: 1.5vh;
+  font-size: 25px;
+  color: #a3c1fe;
+  border: 0;
+  box-shadow: none;
+}
+button:active {
+  box-shadow: 10px 10px 30px rgb(99, 151, 219),
+    -10px -10px 30px rgb(55, 107, 219);
+}
+button:disabled {
+  width: 12vh;
+  height: 12vh;
+  margin: 1.5vh;
+  border-radius: 10px;
+  background-color: #001d56;
+  font-size: 25px;
+  color: #62769d;
+  border: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 500px) {
+  button:enabled {
+    font-size: 6vw;
+    width: 20vw;
+    height: 20vw;
+    margin: 1.7vw;
+  }
+  button:disabled {
+    font-size: 6vw;
+    width: 20vw;
+    height: 20vw;
+    margin: 1.7vw;
+  }
+}
+
+.active {
+  background-color: rgb(0, 183, 170) !important;
+  color: rgb(50, 110, 106) !important;
+  box-shadow: 5px 5px 30px rgb(99, 219, 210),
+    -5px -5px 30px rgb(55, 219, 207) !important;
+  border: none;
+}
+/*кнопки END*/ 
+
+
+/*кнопка НАЧАТЬ*/
+#start_btn {
+  border: none;
+  border-radius: 10px;
+  font-size: 3.7vh;
+  background-color: rgb(165, 0, 225);
+  color: rgb(21, 58, 133);
+  padding: 1vh 2vh;
+  margin: 3vh 0;
+
+}
+
+#start_btn:hover {
+  transition: 1s;
+  box-shadow: 5px 5px 30px rgb(225, 234, 115), -5px -5px 40px rgb(225, 226, 47);
+  color: rgb(225, 234, 115);
+}
+/*кнопка НАЧАТЬ END*/
+
+#result {
+  color: #a3c1fe;;
+  font-size: 2.4vh;
+}
+
+@media (max-width: 500px) {
+  #start_btn {
+    font-size: 7vw;
+    padding: 2vw 6vw;
+  }
+}
+
