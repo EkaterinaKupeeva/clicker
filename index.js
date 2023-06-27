@@ -92,6 +92,7 @@ function frontBtns(value) {
   timeClearBtnRandom = 5000;
   timeAddClass = 500;
   timeRemoveClass = 800;
+  result.innerHTML = ' '
 }
 //начало игры END
 
