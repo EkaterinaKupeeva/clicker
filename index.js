@@ -109,8 +109,6 @@ function btnsNoActive() {
   start_btn.value = "НАЧАТЬ"
 }
 
-
-
 //клик на кнопку НАЧАТЬ
 function getStart() {
     arrayClick.splice(0, lvlNumClick);
@@ -140,9 +138,7 @@ function getStart() {
       input.disabled = false;
     }
   }, timeClearBtnRandom + timeRemoveClass);
-
-
-  }
+}
 
 
 //функция подсвечивания кнопок
@@ -191,7 +187,6 @@ function getClick(num) {
       }
       trueArray = " ";
     }
-
     start_btn.disabled = false;
     start_btn.style.opacity = "1";
     btnsNoActive();
